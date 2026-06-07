@@ -43,6 +43,34 @@
     </div>
     <img src="https://picsum.photos/300 alt="Фото">
     <a href="https://github.com">Мій GitHub</a>
+
+    <h3>Калькулятор</h2>
+
+    <input type="number" id="num1" placeholder="Перше число">
+    <input type="number" id="num2" placeholder="Друге число">
+
+    <button onclick="calculate()">
+        Додати
+    </button>
+
+    <p id="result"></p>
+    <button onclick="sayHello()">
+        Натисни на мене
+    </button>
+
+    <script>
+    function sayHello() {
+        alert("Привіт, Ніка!");
+    }
+   
+    function calculate() {
+        let a = Number(document.getElementById("num1").value);
+        let b = Number(document.getElementById("num2").value);
+        
+        document.getElementById("result").innerText =
+            "Сума: " + (a + b);
+    }
+    </script>
 </body>
 </html>
 
